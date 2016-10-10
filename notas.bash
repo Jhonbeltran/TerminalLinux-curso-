@@ -27,3 +27,17 @@ Fisica_General_-_Fisica_Universitaria_Vol_2__ed_12(Sears-Zemansky).pdf
 
 ➜  Terminal y linea de comandos md5sum calculos                    
 f9237a81d1ba43842ee203b5acd5c814  calculos
+
+Nos permite crear una especie de huella digital de un archivo, usando el algoritmo md5. 
+De hecho, no existe algún otro directorio o archivo en el mundo con el mismo md5 
+
+
+//nos muestra el archivo y con enter va avanzando y retrocede con b
+➜  platzigram git:(master) ✗ more index.scss
+
+//nos muestra el archivo en una pantalla que ce cierra con q
+➜  platzigram git:(master) ✗ less index.scss
+
+Para agregar un usuario a un grupo ejecutamos el siguiente comando:
+➜ sudo addgroup usuario grupo
+
