@@ -41,3 +41,7 @@ De hecho, no existe algún otro directorio o archivo en el mundo con el mismo md
 Para agregar un usuario a un grupo ejecutamos el siguiente comando:
 ➜ sudo addgroup usuario grupo
 
+
+Si quieres aprender a como a usar un editor de texto en la terminal como VIM puedes usar el siguiente comando:
+
+➜ vimtutor
