@@ -45,3 +45,15 @@ Para agregar un usuario a un grupo ejecutamos el siguiente comando:
 Si quieres aprender a como a usar un editor de texto en la terminal como VIM puedes usar el siguiente comando:
 
 ➜ vimtutor
+
+Con Ctrl+R  puedo buscar en el bash o zsh un comando ya ejecutado
+
+
+*****************************************************************
+******	PARA DESEMPAQUETAR ARCHIVOS Y/O DESCOMPRIMIRLOS  ********
+*****************************************************************
+desempaquetar
+➜ gzip -d archivo.tar.gz
+
+Para desempaquetar y descomprimir
+➜ tar xvfz latest.tar.gz
