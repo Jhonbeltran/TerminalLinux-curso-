@@ -57,3 +57,14 @@ desempaquetar
 
 Para desempaquetar y descomprimir
 ➜ tar xvfz latest.tar.gz
+
+
+
+
+Para administrar un paquete:
+➜ dpkg -L wordpress
+
+Para saber en que ruta se encuentra un binario
+➜ which nombredelbinario
+
+
