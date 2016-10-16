@@ -67,4 +67,4 @@ Para administrar un paquete:
 Para saber en que ruta se encuentra un binario
 ➜ which nombredelbinario
 
-Para ver los procesos del sistema podemos istalar el programa htop
+Para ver los procesos del sistema podemos instalar el programa htop
