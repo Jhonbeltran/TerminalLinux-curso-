@@ -9,11 +9,8 @@ Nos permite crear una cadena de la huella digital de un archivo, usando el algor
 ➜ open [archivo] : abre los archivos con el programa que al sistema mejor le parece
 ➜ open -a vim [archivo] : abre el archivo con vim
 
-//nos muestra el archivo y con enter va avanzando y retrocede con b
-➜ more index.scss
-
-//nos muestra el archivo en una pantalla que ce cierra con q
-➜ less index.scss
+➜ more index.scss : muestra el archivo y con enter va avanzando y retrocede con b
+➜ less index.scss : nos muestra el archivo en una pantalla que ce cierra con q
 
 Para agregar un usuario a un grupo ejecutamos el siguiente comando:
 ➜ sudo addgroup usuario grupo
