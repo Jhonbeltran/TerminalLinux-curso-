@@ -1,15 +1,19 @@
-➜  Terminal y linea de comandos md5sum calculos                    
-f9237a81d1ba43842ee203b5acd5c814  calculos
+➜ bc Es una calculadora
+➜ bc -q sale la calculadora sin el anuncio
+➜ bc [archivo] : hace los calculos que están dentro del archivo
 
-Nos permite crear una especie de huella digital de un archivo, usando el algoritmo md5. 
-De hecho, no existe algún otro directorio o archivo en el mundo con el mismo md5 
+➜ md5sum [archivo]                   
+f9237a81d1ba43842ee203b5acd5c814  [archivo]
+Nos permite crear una cadena de la huella digital de un archivo, usando el algoritmo md5. 
 
+➜ open [archivo] : abre los archivos con el programa que al sistema mejor le parece
+➜ open -a vim [archivo] : abre el archivo con vim
 
 //nos muestra el archivo y con enter va avanzando y retrocede con b
-➜  platzigram git:(master) ✗ more index.scss
+➜ more index.scss
 
 //nos muestra el archivo en una pantalla que ce cierra con q
-➜  platzigram git:(master) ✗ less index.scss
+➜ less index.scss
 
 Para agregar un usuario a un grupo ejecutamos el siguiente comando:
 ➜ sudo addgroup usuario grupo
