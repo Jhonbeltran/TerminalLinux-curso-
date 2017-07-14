@@ -24,6 +24,10 @@ Nos permite crear una cadena de la huella digital de un archivo, usando el algor
 
 ➜ which [nombredelbinario] : Para saber en que ruta se encuentra un binario
 
+➜ cat [archivo] | grep [string]$ | wc -l
+grep nos sirve para filtrar las lineas que tienen la [string] que se le indica,
+el signo $ es una expresion regular que indica que ahí termina la linea (es decir que queremos que la string que buscamos esté al final de las lineas)
+
 Para agregar un usuario a un grupo ejecutamos el siguiente comando:
 ➜ sudo addgroup usuario grupo
 
