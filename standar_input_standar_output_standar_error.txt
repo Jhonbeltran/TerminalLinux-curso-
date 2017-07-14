@@ -1,4 +1,17 @@
-Uso del pipe |
+*********************************************************************************
+STDIN = 0
+STDOUT = 1
+STDERR = 2
+
+“| pipe” = Manda el STDOUT o el resultado a otro comando o programa:
+cat operaciones.bc | bc -q
+
+“> mayor que” = Imprime el STDOUT a un archivo
+operaciones.bc > resultados.txt
+
+“< menor que” = Lo mismo que el pipe, pero sin necesidad de ejecutar otro comando
+bc -q < operaciones.bc
+*********************************************************************************
 
 ➜  cat calculos.bc | bc -q
 Lo que hace el comando es: el pipe (|) está tomando el STANDAR OUTPUT
@@ -6,3 +19,14 @@ del la ejecucion anterior y la está enviando al STANDAR INPUT de la siguiente.
 
 ➜  cat calculos.bc | bc -q | wc -l > res_bc
 finalmente podriamos guardar todo en un archivo llamado res_bc
+
+➜  bc -q < calculos.bc
+En este caso trae el archivo calculos.bc para que se ejecute en bc
+
+➜  bc -q < calculos.bc > resultado 2>&1
+Almacena los dos streams de salida en el archivo resultado
+
+➜  bc -q < calculos.bc > resultado_1 2 > errores
+guarda los resultados correctos al archivo resultado_1 y los errores al
+archivo errores
+
