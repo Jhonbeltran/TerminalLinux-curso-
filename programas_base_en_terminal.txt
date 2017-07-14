@@ -27,59 +27,11 @@ Nos permite crear una cadena de la huella digital de un archivo, usando el algor
 Para agregar un usuario a un grupo ejecutamos el siguiente comando:
 ➜ sudo addgroup usuario grupo
 
-_____________________________________________________________________________
-_____________________________________________________________________________
-_____________________________________________________________________________
-FORMAS DE EJECUTAR UN COMANDO 
-
-➜ comando
-➜ comando -F 1
-➜ comando --banderas=1
-➜ comando parametro.txt
-➜ comando parametro_1.txt parametro_2.txt
-➜ comando -b -h 1 parametro.txt
-_____________________________________________________________________________
-_____________________________________________________________________________
-_____________________________________________________________________________
-
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-
-Podemos ejecutar un proceso (como un script) en segundo plano usando por ejemplo:
-➜ php script.php &
-
-Para matar un proceso podemos usar:
-➜ kill -9 [PID del proceso]
-
-Para ver los procesos sin interaccion podemos usar
-➜ ps -ef (para ubuntu)
-en otros sistemas buscar en
-➜ man ps
-
-Para ver el exit status del ultimo proceso que se ejecuto (0 si es un cierre correcto)
-➜ echo $?
-
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-
-
-
 Si quieres aprender a como a usar un editor de texto en la terminal como VIM puedes usar el siguiente comando:
 
 ➜ vimtutor
 
 Con Ctrl+R  puedo buscar en el bash o zsh un comando ya ejecutado
-
-
-*****************************************************************
-******	PARA DESEMPAQUETAR ARCHIVOS Y/O DESCOMPRIMIRLOS  ********
-*****************************************************************
-desempaquetar
-➜ gzip -d archivo.tar.gz
-
-Para desempaquetar y descomprimir
-➜ tar xvfz latest.tar.gz
-
-
-
 
 Para administrar un paquete:
 ➜ dpkg -L wordpress

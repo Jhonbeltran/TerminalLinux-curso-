@@ -1,0 +1,13 @@
+Podemos ejecutar un proceso (como un script) en segundo plano usando por ejemplo:
+➜ php script.php &
+
+Para matar un proceso podemos usar:
+➜ kill -9 [PID del proceso]
+
+Para ver los procesos sin interaccion podemos usar
+➜ ps -ef (para ubuntu)
+en otros sistemas buscar en
+➜ man ps
+
+Para ver el exit status del ultimo proceso que se ejecuto (0 si es un cierre correcto)
+➜ echo $?

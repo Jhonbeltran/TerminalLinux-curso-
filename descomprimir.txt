@@ -1,0 +1,8 @@
+*****************************************************************
+******	PARA DESEMPAQUETAR ARCHIVOS Y/O DESCOMPRIMIRLOS  ********
+*****************************************************************
+desempaquetar
+➜ gzip -d archivo.tar.gz
+
+Para desempaquetar y descomprimir
+➜ tar xvfz latest.tar.gz
