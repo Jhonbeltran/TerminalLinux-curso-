@@ -22,8 +22,44 @@ Nos permite crear una cadena de la huella digital de un archivo, usando el algor
 
 ➜ wc [archivo] : (-l -w -p) muestra lineas palabras caracteres
 
+➜ which [nombredelbinario] : Para saber en que ruta se encuentra un binario
+
 Para agregar un usuario a un grupo ejecutamos el siguiente comando:
 ➜ sudo addgroup usuario grupo
+
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+FORMAS DE EJECUTAR UN COMANDO 
+
+➜ comando
+➜ comando -F 1
+➜ comando --banderas=1
+➜ comando parametro.txt
+➜ comando parametro_1.txt parametro_2.txt
+➜ comando -b -h 1 parametro.txt
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+Podemos ejecutar un proceso (como un script) en segundo plano usando por ejemplo:
+➜ php script.php &
+
+Para matar un proceso podemos usar:
+➜ kill -9 [PID del proceso]
+
+Para ver los procesos sin interaccion podemos usar
+➜ ps -ef (para ubuntu)
+en otros sistemas buscar en
+➜ man ps
+
+Para ver el exit status del ultimo proceso que se ejecuto (0 si es un cierre correcto)
+➜ echo $?
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
 
 
 Si quieres aprender a como a usar un editor de texto en la terminal como VIM puedes usar el siguiente comando:
@@ -48,7 +84,9 @@ Para desempaquetar y descomprimir
 Para administrar un paquete:
 ➜ dpkg -L wordpress
 
-Para saber en que ruta se encuentra un binario
-➜ which nombredelbinario
 
+*******************************************************************
+*******************************************************************
 Para ver los procesos del sistema podemos instalar el programa htop
+*******************************************************************
+*******************************************************************
