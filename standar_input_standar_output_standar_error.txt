@@ -1,0 +1,8 @@
+Uso del pipe |
+
+➜  cat calculos.bc | bc -q
+Lo que hace el comando es: el pipe (|) está tomando el STANDAR OUTPUT
+del la ejecucion anterior y la está enviando al STANDAR INPUT de la siguiente.
+
+➜  cat calculos.bc | bc -q | wc -l > res_bc
+finalmente podriamos guardar todo en un archivo llamado res_bc
