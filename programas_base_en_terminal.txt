@@ -78,7 +78,7 @@ Para agregar un usuario a un grupo ejecutamos el siguiente comando:
 ➜ sudo addgroup usuario grupo
 
 Si quieres aprender a como a usar un editor de texto en la terminal como VIM puedes usar el siguiente comando:
-
+ 
 ➜ vimtutor
 
 Con Ctrl+R  puedo buscar en el bash o zsh un comando ya ejecutado
