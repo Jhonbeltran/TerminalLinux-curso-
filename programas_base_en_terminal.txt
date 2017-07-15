@@ -12,6 +12,8 @@ Nos permite crear una cadena de la huella digital de un archivo, usando el algor
 ➜ more [archivo] : muestra el archivo y con enter va avanzando y retrocede con b
 ➜ less [archivo] : nos muestra el archivo en una pantalla que ce cierra con q
 ➜ cat [archivo] : imprime el archivo completo
+➜ cat > request_data.txt
+para crear un archivo con cat
 
 ➜ tail [archivo] : nos muestra las ultimas 10 lineas del archivo
 ➜ tail -20 index.scss : ultimas 20 lineas de un archivo
@@ -50,6 +52,27 @@ de esta forma renombramos varios archivos de un directorio
 ejemplo
 ➜ split -l ../flickr_photos.csv ./fl_3000
 esto nos divide un archivo en diferentes archivos de una determinada cantidad de lineas como maximo
+
+➜ curl https://www.google.com.co
+curl emula y reliza request hacia internet
+en este caso nos imprime en la terminal el html de la url
+➜ curl -o google_prueba.html https://www.google.com.co
+ahora guardamos lo que trae el request en un archivo
+➜ curl -O https://raw.githubusercontent.com/Jhonbeltran/cli/master/files/close_call.gif
+traemos un archivo con su nombre de origen, el estatus de la descarga va por el STANDAR ERROR
+➜ curl https://raw.githubusercontent.com/Jhonbeltran/cli/master/files/movies.dat | grep 1997
+curl https://raw.githubusercontent.com/Jhonbeltran/cli/master/files/movies.dat 2> /dev/null | grep 1997
+asi evitamos que nos traiga el tiempo re la descarga y esa información, si enviamos algo a /dev/null significa que no vamos a hacer nada con el
+➜ curl "https://httpbin.org/get?variable=2"
+Hacemos un envio de una variable tipo get
+➜ curl "https://httpbin.org/get?variable=2&otra=3"
+ahora enviamos dos variables (para usar el & debemos poner la url entre comillas)
+➜ curl --data "variable1=1&variable2=2" "https://httpbin.org/post"
+Hacemos un envio usando el metodo post
+➜ curl -A "Agente_movil_" --data "variable1=1&variable2=2" "https://httpbin.org/post"
+Ahora enviamos el nombre del agente, generalmente se usa para cuando la petición se hace desde un movil o algo asi.
+➜ curl -d @request_data.txt https://guarded-dusk-89606.herokuapp.com/messages
+ahora enviamos el mensaje desde un archivo, es decir variable por post desde un archivo
 
 Para agregar un usuario a un grupo ejecutamos el siguiente comando:
 ➜ sudo addgroup usuario grupo
