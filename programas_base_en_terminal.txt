@@ -46,6 +46,11 @@ busca los archivos y los copia a una carpeta destino
 ➜ find ~/src -name 'flickr_*' -type f -exec mv {} {}.csv\;
 de esta forma renombramos varios archivos de un directorio
 
+➜ split -l [numerodelineas] [archivo] [nombrebasedestino]
+ejemplo
+➜ split -l ../flickr_photos.csv ./fl_3000
+esto nos divide un archivo en diferentes archivos de una determinada cantidad de lineas como maximo
+
 Para agregar un usuario a un grupo ejecutamos el siguiente comando:
 ➜ sudo addgroup usuario grupo
 
