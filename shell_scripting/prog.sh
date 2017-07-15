@@ -2,6 +2,4 @@
 # se ejecuta usando ./prog.sh
 #!/bin/bash
 #El ejecutor es el que nos dice con que se va a ejecutar el archivo
-date
-pwd
-echo "Fin"
+date; pwd; echo "Fin"
