@@ -28,6 +28,24 @@ Nos permite crear una cadena de la huella digital de un archivo, usando el algor
 grep nos sirve para filtrar las lineas que tienen la [string] que se le indica,
 el signo $ es una expresion regular que indica que ahí termina la linea (es decir que queremos que la string que buscamos esté al final de las lineas)
 
+➜ grep -r . -e [string]
+➜ grep -r [ubicacion] -e [string] -n
+para buscar la cadena [string] dentro del directorio que nos encontramos y que nos diga en que archivo se encuentra y en que linea
+➜ grep -v [string]
+Para buscar las [string] que NO contenga esa [string]
+
+*********************para grep***********************
+^ = Se usa para referir al inicio de linea
+$ = Se usa para fin de linea
+*****************************************************
+
+➜ find ~/src -name '*.csv' -type f -exec md5 {} \;
+Busca en un directorio archivos en este caso con terminación .csv de tipo file y para cada uno ejecuta md5 para ver su huella
+➜ find ~/src -name '*.csv' -type f -exec cp {} [carpetadestino]\;
+busca los archivos y los copia a una carpeta destino
+➜ find ~/src -name 'flickr_*' -type f -exec mv {} {}.csv\;
+de esta forma renombramos varios archivos de un directorio
+
 Para agregar un usuario a un grupo ejecutamos el siguiente comando:
 ➜ sudo addgroup usuario grupo
 
